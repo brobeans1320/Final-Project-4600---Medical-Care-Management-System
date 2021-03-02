@@ -42,3 +42,9 @@ Purpose:
   8. Name: add_prescription
      Type: Functional
      Summary: Allows doctor or nurse to add a new presciption. (Doctors can send controlled substances, while nurses cannot.)
+
+  9. Name: show_patientProfile
+     Type: Functional
+     Summary: Allows doctors and nurses to see a full patient profile by search parameters.
+     
+  10. 
