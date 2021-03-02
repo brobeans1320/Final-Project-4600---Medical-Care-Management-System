@@ -47,11 +47,18 @@ Purpose:
      Type: Functional
      Summary: Allows doctors and nurses to see a full patient profile by search parameters.
     
-  10. Name:  
+  10. Name: platform_os
+      Type: constraint
+      Summary: Our system will be targeted towards windows 10
+      
+  11. Name: backup_data
+      Type: constraint
+      Summary: In case of failure data will be backed up on scheduled intervals.
     
   11. Name: encrypt_password
       Type: risk
       Summary: This encrypts the password entered by the user when creating a new profile.
+      
   
   
   
