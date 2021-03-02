@@ -10,17 +10,17 @@ Purpose:
   proffesionals, but also by the patient. This keeps medical records up to date efficiently and effectively. Each user will have an ecrypted password as a seccurity feature.
   
   
-  1. Name: add_patient
+  1. Name: add_user
      Type: Functional
-     Summary: Adds a new patient to the data. Gives patient, patient permissions.
-  
-  2. Name: add_doctor
-     Type: Functional
-     Summary: Adds a new doctor to the records system. Gives the docotor permissions.
+     Summary: creates a new patient, doctor, or nurse profile. Ask for password, and sets permissions.
      
-  3. Name: add_nurse
-     Type: Functional 
-     Summary: Adds new nurse and gives permissions.
+  2. Name: delete_user
+     Type: Functional
+     Summary: Deletes user from the database if needed.
+  
+  3. Name: delete_record
+     Type: Functionality
+     Summary: Allows user to delete medical record as specified in case of error. Only allowed by certain permissions.
      
   4. Name: add_bloodpressure
      Type: Functional
@@ -55,7 +55,7 @@ Purpose:
       Type: constraint
       Summary: In case of failure data will be backed up on scheduled intervals.
     
-  11. Name: encrypt_password
+  12 Name: encrypt_password
       Type: risk
       Summary: This encrypts the password entered by the user when creating a new profile.
       
