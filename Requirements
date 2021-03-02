@@ -54,8 +54,12 @@ Purpose:
   11. Name: backup_data
       Type: constraint
       Summary: In case of failure data will be backed up on scheduled intervals.
+      
+  12. Name: hipaa_laws
+      Type: constraint
+      Summary: Must abide by all current HIPAA laws.
     
-  12. Name: encrypt_password
+  13. Name: encrypt_password
       Type: risk
       Summary: This encrypts the password entered by the user when creating a new profile.
       
