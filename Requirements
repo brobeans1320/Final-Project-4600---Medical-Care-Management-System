@@ -7,7 +7,7 @@ Team Members:
 
 Purpose:
   The purpose of this project is to provide a different type of health care doucmentation. This project provides a system that is not only controlled by the health care
-  proffesionals, but also by the patient. This keeps medical records up to date efficiently and effectively. 
+  proffesionals, but also by the patient. This keeps medical records up to date efficiently and effectively. Each user will have an ecrypted password as a seccurity feature.
   
   
   1. Name: add_patient
@@ -46,5 +46,12 @@ Purpose:
   9. Name: show_patientProfile
      Type: Functional
      Summary: Allows doctors and nurses to see a full patient profile by search parameters.
-     
-  10. 
+    
+  10. Name:  
+    
+  11. Name: encrypt_password
+      Type: risk
+      Summary: This encrypts the password entered by the user when creating a new profile.
+  
+  
+  
