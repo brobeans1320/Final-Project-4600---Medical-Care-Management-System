@@ -55,7 +55,7 @@ Purpose:
       Type: constraint
       Summary: In case of failure data will be backed up on scheduled intervals.
     
-  12 Name: encrypt_password
+  12. Name: encrypt_password
       Type: risk
       Summary: This encrypts the password entered by the user when creating a new profile.
       
