@@ -1,0 +1,44 @@
+Medical Care Management System Requirements
+
+Team Members: 
+  Eric Brewer
+  Alex Arriaga 
+  Esai Jimenez
+
+Purpose:
+  The purpose of this project is to provide a different type of health care doucmentation. This project provides a system that is not only controlled by the health care
+  proffesionals, but also by the patient. This keeps medical records up to date efficiently and effectively. 
+  
+  
+  1. Name: add_patient
+     Type: Functional
+     Summary: Adds a new patient to the data. Gives patient, patient permissions.
+  
+  2. Name: add_doctor
+     Type: Functional
+     Summary: Adds a new doctor to the records system. Gives the docotor permissions.
+     
+  3. Name: add_nurse
+     Type: Functional 
+     Summary: Adds new nurse and gives permissions.
+     
+  4. Name: add_bloodpressure
+     Type: Functional
+     Summary: Allows patient, nurse, or doctor to enter blood pressure at a certain time and date.
+     
+  5. Name: add_bloodsugar
+     Type: Functional
+     Summary: Allows patient, nurse, or doctor to enter blood sugar and records time and date.
+     
+  6. Name: add_surgeryrecords
+     Type: Functional
+     Summary: Allows a patient, nurse, or doctor to enter surgery records.
+     
+  7. Name: add_drugrecords
+     Type: Functional
+     Summary: Allows a patient, nurse, or doctor to create a list of drugs the patient has taken, or
+     is currently taking.
+     
+  8. Name: add_prescription
+     Type: Functional
+     Summary: Allows doctor or nurse to add a new presciption. (Doctors can send controlled substances, while nurses cannot.)
