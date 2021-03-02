@@ -7,7 +7,7 @@ Team Members:
 
 Purpose:
   The purpose of this project is to provide a different type of health care doucmentation. This project provides a system that is not only controlled by the health care
-  proffesionals, but also by the patient. This keeps medical records up to date efficiently and effectively. Each user will have an ecrypted password as a seccurity feature.
+  proffesionals, but also by the patient. 
   
   
   1. Name: add_user
@@ -42,24 +42,48 @@ Purpose:
   8. Name: add_prescription
      Type: Functional
      Summary: Allows doctor or nurse to add a new presciption. (Doctors can send controlled substances, while nurses cannot.)
+     
+  9. Name: send_prescription
+     Type: Functional
+     Summary: Sends a prescription to be filled.
+     
+ 10. Name: create_surgery
+     Type: Functional
+     Summary: Creates a type of surgery to be added to a medical record or the surgery queue
+     
+ 11. Name: add_tosurgeryqueue
+     Type: Functional
+     Summary: Adds a patient and a surgery to a surgery queue.
+     
+ 12. Name: sort_patients
+     Type: Functional
+     Summary: Allows doctors and nurses to sort patients by medications, surgerys, age, sex, and name.
+     
+ 13. Name: add_bill
+     Type: Functional
+     Summary: Bills the clients.
 
-  9. Name: show_patientProfile
+ 14. Name: show_patientProfile
      Type: Functional
      Summary: Allows doctors and nurses to see a full patient profile by search parameters.
+     
+ 15. Name: billing_security
+     Type: constraint
+     Summary: Must have a secure way to accept payment from customers.
     
-  10. Name: platform_os
+  16. Name: platform_os
       Type: constraint
       Summary: Our system will be targeted towards windows 10
       
-  11. Name: backup_data
+  17. Name: backup_data
       Type: constraint
       Summary: In case of failure data will be backed up on scheduled intervals.
       
-  12. Name: hipaa_laws
+  18. Name: hipaa_laws
       Type: constraint
       Summary: Must abide by all current HIPAA laws.
     
-  13. Name: encrypt_password
+  19. Name: encrypt_password
       Type: risk
       Summary: This encrypts the password entered by the user when creating a new profile.
       
