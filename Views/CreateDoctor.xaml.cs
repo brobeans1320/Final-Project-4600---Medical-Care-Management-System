@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Final_Project_4600___Medical_Care_Management_System
+namespace Final_Project_4600___Medical_Care_Management_System.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CreateDoctor.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreateDoctor : UserControl
     {
-        public MainWindow()
+        public CreateDoctor()
         {
             InitializeComponent();
-        }
-
-        private void login_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
