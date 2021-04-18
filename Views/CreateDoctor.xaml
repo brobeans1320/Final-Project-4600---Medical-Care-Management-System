@@ -6,8 +6,23 @@
              xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="SkyBlue">
-        
-            
+    <Grid Background="SkyBlue" RenderTransformOrigin="0.513,0.505">
+        <TextBlock Text="Create New Doctor" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Text="Username:" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="85,78,659,354" Height="18"/>
+        <TextBox x:Name="newusername" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="142,78,526,354" Width="132"/>
+        <TextBlock Text="Password:" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="90,101,657,331" Height="18"/>
+        <TextBox x:Name="newpassword" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="142,101,526,331" Width="132" Height="18"/>
+        <TextBlock Text="Confirm Password:" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="43,124,659,308" Height="18"/>
+        <TextBox x:Name="confirmpassword" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="142,124,526,308" Width="132"/>
+        <TextBlock Text="First Name:" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="82,147,658,285" Height="18"/>
+        <TextBlock Text="Last Name:" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="82,170,659,262" Height="18"/>
+        <TextBox x:Name="firstname" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="142,147,526,285" Width="132"/>
+        <TextBox x:Name="lastname" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="142,170,526,262" Width="132"/>
+        <TextBlock Text="Date Of Birth(MM/DD/YY):" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,193,658,241"/>
+        <TextBox x:Name="DOB" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="142,193,526,239" Width="132"/>
+        <TextBlock Text="Specialty:" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="93,216,657,216" Height="18"/>
+        <TextBox x:Name="DOB_Copy" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="142,216,526,216" Width="132"/>
+        <Button x:Name="new_doctor" Content="Create New User" Margin="142,308,565,122"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="142,328,624,102" Width="34"/>
     </Grid>
 </UserControl>
