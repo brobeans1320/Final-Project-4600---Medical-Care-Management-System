@@ -24,5 +24,10 @@ namespace Final_Project_4600___Medical_Care_Management_System
         {
             InitializeComponent();
         }
+
+        private void login_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

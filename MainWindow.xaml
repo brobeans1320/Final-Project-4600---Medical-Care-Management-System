@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Medical Management System Login" Height="450" Width="800">
     <Grid>
-        
+            
+        <Grid Background="SkyBlue"/>
+        <TextBlock Text="Medical Management System Login" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock Text="Username:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="290,108,0,291"/>
+        <TextBlock Text="Password:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="295,150,0,249"/>
+        <TextBox x:Name="Username" Margin="360,107,220,286"/>
+        <TextBox x:Name="Password" Margin="360,149,220,244"/>
+        <Button x:Name="login" Click="login_Click" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="360,0,339,182" Height="37" Width="93"/>
+
     </Grid>
 </Window>
