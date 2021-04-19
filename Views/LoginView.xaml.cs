@@ -12,39 +12,38 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Final_Project_4600___Medical_Care_Management_System.ViewModels;
 
-namespace Final_Project_4600___Medical_Care_Management_System
+namespace Final_Project_4600___Medical_Care_Management_System.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginViewModel.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginViewModel : UserControl
     {
-        public MainWindow()
+        public LoginViewModel()
         {
             InitializeComponent();
         }
 
-        private void login_Click(object sender, RoutedEventArgs e) //Login Button
+        private void newAccount_Click(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrEmpty(Username.Text))
+            
+        }
+
+        private void login_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Username.Text))
             {
                 MessageBox.Show("Please enter your username.", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            if(string.IsNullOrEmpty(Password.Text))
+            if (string.IsNullOrEmpty(Password.Text))
             {
                 MessageBox.Show("Please enter your password.", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             EncryptPassword password = new EncryptPassword(Password.Text);
             string encryptedPass = password.encrypt();
-        }
-
-        private void newAccount_Click(object sender, RoutedEventArgs e) //Opens CreateNewAccount window
-        {
-            DataContext = new CreateAccountViewModel();
         }
     }
 }

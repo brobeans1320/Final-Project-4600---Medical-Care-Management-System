@@ -9,10 +9,13 @@ using System.Windows.Input;
 
 namespace Final_Project_4600___Medical_Care_Management_System.ViewModels
 {
-    public class CreateAccountViewModel : ViewModelBase
+    class LoginViewModel : ViewModelBase
     {
         public ICommand NavigateHomeCommand { get; }
 
-       
+        public LoginViewModel(NavigationStore navigationStore)
+        {
+            NavigateHomeCommand = new NavigateHomeCommand(navigationStore);
+        }
     }
 }

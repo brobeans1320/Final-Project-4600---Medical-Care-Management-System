@@ -3,14 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System.Views"
+             xmlns:viewmodels="clr-namespace:Final_Project_4600___Medical_Care_Management_System.ViewModels"
+             xmlns:views="clr-namespace:Final_Project_4600___Medical_Care_Management_System.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="SkyBlue">
-        <TextBlock Text="Create Account" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <TextBlock Text="Please select a type of person:" FontSize="30" Margin="201,80,202,330" TextAlignment="Justify" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="selectdoctor" Content="Doctor" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="332,156,370,235" Height="59" Width="98"/>
-        <Button x:Name="selectnurse" Content="Nurse" HorizontalAlignment="Center" VerticalAlignment="Center" Height="59" Margin="332,215,370,176" Width="98"/>
-        <Button x:Name="selectpatient" Content="Patient" HorizontalAlignment="Center" VerticalAlignment="Center" Height="59" Width="98" Margin="332,274,370,117"/>
+    <UserControl.Resources>
+        <DataTemplate x:Name="SelectDoctorTemplate" DataType="{x:Type viewmodels:CreateDoctor}">
+            <views:CreateDoctor DataContext="{Binding}"/>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid Background="SkyBlue"/>
+
+        <TextBlock
+            Text="Create Account" 
+            FontSize="20" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" Margin="316,10,348,413"/>
+        <TextBlock 
+            Text="Please select a type of person:" 
+            FontSize="30" Margin="169,79,233,331" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+
+        <Button
+            x:Name="selectdoctor"
+            Content="Doctor"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Margin="332,156,370,235"
+            Height="59"
+            Width="98"
+            Click="selectdoctor_Click"/>
+
+        <Button 
+            x:Name="selectnurse" 
+            Content="Nurse" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Height="59" 
+            Margin="332,215,370,176" 
+            Width="98"/>
+
+        <Button 
+            x:Name="selectpatient" 
+            Content="Patient" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Height="59" 
+            Width="98" 
+            Margin="332,274,370,117"/>
+        
+
     </Grid>
 </UserControl>

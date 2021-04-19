@@ -13,26 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Final_Project_4600___Medical_Care_Management_System.ViewModels;
-namespace Final_Project_4600___Medical_Care_Management_System.Views
+
+namespace Final_Project_4600___Medical_Care_Management_System
 {
     /// <summary>
-    /// Interaction logic for CreateAccount.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class CreateAccount : UserControl
+    public partial class MainWindow : Window
     {
-        public CreateAccount()
+        public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void selectdoctor_Click(object sender, RoutedEventArgs e)
-        {
-            DataContext = new CreateDoctor();
         }
     }
 }

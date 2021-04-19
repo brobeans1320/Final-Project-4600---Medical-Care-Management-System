@@ -1,9 +1,7 @@
-﻿<Application x:Class="Final_Project_4600___Medical_Care_Management_System.App"
+﻿<Application 
+             x:Class="Final_Project_4600___Medical_Care_Management_System.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System"
-             StartupUri="MainLoginWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
+             xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System">
+    <Application.Resources/>
 </Application>

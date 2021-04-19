@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Final_Project_4600___Medical_Care_Management_System.Views.LoginViewModel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="SkyBlue">
+        <TextBlock Text="Medical Management System Login" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock Text="Username:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="290,108,0,291"/>
+        <TextBlock Text="Password:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="295,150,0,249"/>
+        <TextBox x:Name="Username" Margin="360,107,220,286"/>
+        <TextBox x:Name="Password" Margin="360,149,220,244"/>
+        <Button x:Name="login" Click="login_Click" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="360,0,295,182" Height="37" Width="137"/>
+        <Button x:Name="newAccount" Click="newAccount_Click" Content="Create New Account" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="360,0,295,145" Width="137" Height="37" Command="{Binding NavigateHomeCommand}"/>
+    </Grid>
+</UserControl>
