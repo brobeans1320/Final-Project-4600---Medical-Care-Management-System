@@ -161,7 +161,7 @@
                          Width="200"
                          FontFamily="Fonts/#IBMPlexMono-Bold"
                          FontWeight="Medium"/>
-            <TextBox x:Name="password"
+            <TextBox x:Name="pass"
                          Grid.Row="8"
                          Grid.Column="2"
                          VerticalAlignment="Center"
@@ -202,6 +202,7 @@
                         Background="MediumSlateBlue"
                         Grid.Column="2"
                         Content="Next"
+                        Click="nextpage_Click"
                         Command="{Binding NavigateCreateAccount2}"/>
             <Button x:Name="backToLogin"
                     Grid.Row="13"

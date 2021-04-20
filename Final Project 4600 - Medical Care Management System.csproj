@@ -67,6 +67,9 @@
     </ApplicationDefinition>
     <Compile Include="Commands\CommandBase.cs" />
     <Compile Include="Commands\NavigateCommand.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="Nurse.cs" />
+    <Compile Include="Patient.cs" />
     <Compile Include="Stores\NavigationStore.cs" />
     <Compile Include="ViewModels\CreateAccount2ViewModel.cs" />
     <Compile Include="ViewModels\CreateAccountViewModel.cs" />
