@@ -16,7 +16,7 @@ namespace Final_Project_4600___Medical_Care_Management_System
     public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
-        {
+       {
             NavigationStore navigationStore = new NavigationStore();
 
             navigationStore.CurrentViewModel = new LoginViewModel(navigationStore);
@@ -26,8 +26,8 @@ namespace Final_Project_4600___Medical_Care_Management_System
                 DataContext = new MainViewModel(navigationStore)
             };
             MainWindow.Show();
-
             base.OnStartup(e);
         }
+       
     }
 }

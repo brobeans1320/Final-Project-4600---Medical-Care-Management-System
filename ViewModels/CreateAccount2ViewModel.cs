@@ -9,16 +9,12 @@ using System.Windows.Input;
 
 namespace Final_Project_4600___Medical_Care_Management_System.ViewModels
 {
-    public class LoginViewModel : ViewModelBase
+    public class CreateAccount2ViewModel : ViewModelBase
     {
         public ICommand NavigateCreateAccount { get; }
-       
-
-        public LoginViewModel(NavigationStore navigationStore)
+        public CreateAccount2ViewModel(NavigationStore navigationStore)
         {
             NavigateCreateAccount = new NavigateCommand<CreateAccountViewModel>(navigationStore, () => new CreateAccountViewModel(navigationStore));
         }
-
-        
     }
 }

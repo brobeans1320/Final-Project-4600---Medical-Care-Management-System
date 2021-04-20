@@ -12,26 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Final_Project_4600___Medical_Care_Management_System.ViewModels;
-using Final_Project_4600___Medical_Care_Management_System.Commands;
+
 namespace Final_Project_4600___Medical_Care_Management_System.Views
 {
     /// <summary>
-    /// Interaction logic for CreateAccount.xaml
+    /// Interaction logic for CreateAccount2View.xaml
     /// </summary>
-    public partial class CreateAccount : UserControl
+    public partial class CreateAccount2View : UserControl
     {
-        public CreateAccount()
+        public CreateAccount2View()
         {
-
             InitializeComponent();
-        }
-
-
-
-        private void nextpage_Click(object sender, RoutedEventArgs e)
-        {
-           
         }
     }
 }

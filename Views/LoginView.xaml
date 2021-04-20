@@ -3,16 +3,126 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System.Views"
+             xmlns:viewmodels="clr-namespace:Final_Project_4600___Medical_Care_Management_System.ViewModels"
+             xmlns:views="clr-namespace:Final_Project_4600___Medical_Care_Management_System.Views"
+             xmlns:local="clr-namespace:Final_Project_4600___Medical_Care_Management_System.ViewModels" 
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="SkyBlue">
-        <TextBlock Text="Medical Management System Login" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock Text="Username:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="290,108,0,291"/>
-        <TextBlock Text="Password:" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="295,150,0,249"/>
-        <TextBox x:Name="Username" Margin="360,107,220,286"/>
-        <TextBox x:Name="Password" Margin="360,149,220,244"/>
-        <Button x:Name="login" Click="login_Click" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="360,0,295,182" Height="37" Width="137"/>
-        <Button x:Name="newAccount" Click="newAccount_Click" Content="Create New Account" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="360,0,295,145" Width="137" Height="37" Command="{Binding NavigateHomeCommand}"/>
+    <UserControl.Resources>
+        <DataTemplate x:Name="createAccount" DataType="{x:Type viewmodels:CreateAccountViewModel}">
+            <views:CreateAccount DataContext="{Binding}"/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="SlateGray"
+                   Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <TextBlock Text="Welcome to the Medical Care Management System"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       Grid.Row="2"
+                       Grid.RowSpan="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="Fonts/#IBMPlexMono-Bold"
+                       FontSize="20"/>
+            <TextBlock Text="Welcome to the Medical Care Management System"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       Grid.Row="2"
+                       Grid.RowSpan="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="Fonts/#IBMPlexMono-Bold"
+                       FontSize="20"/>
+            <TextBlock Text="Username:"
+                           Grid.Column="1"
+                           Grid.Row="6"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontFamily="Fonts/#IBMPlexMono-Bold"
+                           FontWeight="Medium"/>
+            <TextBlock Text="Password:"
+                           Grid.Column="1"
+                           Grid.Row="7"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontFamily="Fonts/#IBMPlexMono-Bold"
+                           FontWeight="Medium"/>
+            
+            <TextBox x:Name="username"
+                         Grid.Row="6"
+                         Grid.Column="2"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Left"
+                         Height="20"
+                         Width="200"
+                         FontFamily="Fonts/#IBMPlexMono-Bold"
+                         FontWeight="Medium"/>
+            <PasswordBox x:Name="pass"
+                         Grid.Row="7"
+                         Grid.Column="2"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Left"
+                         Height="20"
+                         Width="200"
+                         FontFamily="Fonts/#IBMPlexMono-Bold"
+                         FontWeight="Medium"/>
+            <Button x:Name="Login"
+                    Grid.Row="8"
+                    Grid.Column="2"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Content="Login"
+                    Width="100"
+                    Click="login_Click"/>
+            <Button x:Name="CreateAccount"
+                    Grid.Row="8"
+                    Grid.Column="2"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Content="Sign Up"
+                    Width="100"
+                    Command="{Binding NavigateCreateAccount}"/>
+
+
+
+        </Grid>
+
+        <Grid Background="MediumSlateBlue"
+                  Grid.ColumnSpan="2">
+        </Grid>
+
     </Grid>
+
 </UserControl>

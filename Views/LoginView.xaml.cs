@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Final_Project_4600___Medical_Care_Management_System.Commands;
+using Final_Project_4600___Medical_Care_Management_System.ViewModels;
 
 namespace Final_Project_4600___Medical_Care_Management_System.Views
 {
@@ -32,17 +34,17 @@ namespace Final_Project_4600___Medical_Care_Management_System.Views
 
         private void login_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Username.Text))
+            if (string.IsNullOrEmpty(username.Text))
             {
                 MessageBox.Show("Please enter your username.", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            if (string.IsNullOrEmpty(Password.Text))
+            if (string.IsNullOrEmpty(pass.Password))
             {
                 MessageBox.Show("Please enter your password.", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            EncryptPassword password = new EncryptPassword(Password.Text);
+            EncryptPassword password = new EncryptPassword(pass.Password);
             string encryptedPass = password.encrypt();
         }
     }
