@@ -21,6 +21,7 @@ namespace Final_Project_4600___Medical_Care_Management_System.Commands
 
         public override void Execute(object parameter)
         {
+          
             this.navigationStore.CurrentViewModel = createViewModel();
         }
     }

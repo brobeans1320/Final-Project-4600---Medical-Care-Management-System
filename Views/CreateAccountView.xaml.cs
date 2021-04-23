@@ -55,6 +55,7 @@ namespace Final_Project_4600___Medical_Care_Management_System.Views
                 newPatient.setEmail(email.Text);
                 newPatient.setPhoneNumber(phoneNumber.Text);
                 
+                
             }
         }
     }

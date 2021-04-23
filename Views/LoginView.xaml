@@ -9,10 +9,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
-        <DataTemplate x:Name="createAccount" DataType="{x:Type viewmodels:CreateAccountViewModel}">
+        <DataTemplate x:Name="createAccount" 
+                      DataType="{x:Type viewmodels:CreateAccountViewModel}">
             <views:CreateAccount DataContext="{Binding}"/>
         </DataTemplate>
+        <DataTemplate x:Name="patientHome"
+                      DataType="{x:Type viewmodels:PatientHomeViewModel}">
+            <views:PatientHomeView DataContext="{Binding}"/>
+        </DataTemplate>
     </UserControl.Resources>
+    
     <Grid>
 
         <Grid.RowDefinitions>
@@ -44,7 +50,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="25"/>
 
             </Grid.RowDefinitions>
             <TextBlock Text="Welcome to the Medical Care Management System"
@@ -105,6 +111,7 @@
                     HorizontalAlignment="Right"
                     Content="Login"
                     Width="100"
+                    Command="{Binding NavigatePatientHome}"
                     Click="login_Click"/>
             <Button x:Name="CreateAccount"
                     Grid.Row="8"
@@ -113,6 +120,7 @@
                     HorizontalAlignment="Left"
                     Content="Sign Up"
                     Width="100"
+                    Click="CreateAccount_Click"
                     Command="{Binding NavigateCreateAccount}"/>
 
 
