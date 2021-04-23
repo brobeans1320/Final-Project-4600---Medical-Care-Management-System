@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Final_Project_4600___Medical_Care_Management_System.Commands;
+using Final_Project_4600___Medical_Care_Management_System.Stores;
 using Final_Project_4600___Medical_Care_Management_System.ViewModels;
 
 namespace Final_Project_4600___Medical_Care_Management_System.Views
@@ -22,6 +23,7 @@ namespace Final_Project_4600___Medical_Care_Management_System.Views
     /// </summary>
     public partial class LoginViewModel : UserControl
     {
+       
         public LoginViewModel()
         {
             InitializeComponent();
@@ -29,7 +31,10 @@ namespace Final_Project_4600___Medical_Care_Management_System.Views
 
         private void newAccount_Click(object sender, RoutedEventArgs e)
         {
-            
+            if(username.Text == "" || pass.Password == "")
+            {
+                return;
+            }
         }
 
         private void login_Click(object sender, RoutedEventArgs e)
@@ -46,6 +51,18 @@ namespace Final_Project_4600___Medical_Care_Management_System.Views
             }
             EncryptPassword password = new EncryptPassword(pass.Password);
             string encryptedPass = password.encrypt();
+            NavigationStore nav = new NavigationStore();
+            CreateAccountViewModel cV = new CreateAccountViewModel(nav);
+            
         }
+
+        private void CreateAccount_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+       
+
+        
     }
 }

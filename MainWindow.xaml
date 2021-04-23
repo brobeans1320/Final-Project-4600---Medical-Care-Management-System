@@ -16,6 +16,9 @@
             <DataTemplate DataType="{x:Type viewmodels:CreateAccountViewModel}">
                 <views:CreateAccount/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:PatientHomeViewModel}">
+                <views:PatientHomeView/>
+            </DataTemplate>
           
         </ContentControl.Resources>
     </ContentControl>
