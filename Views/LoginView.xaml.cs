@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using Final_Project_4600___Medical_Care_Management_System.Commands;
 using Final_Project_4600___Medical_Care_Management_System.Stores;
 using Final_Project_4600___Medical_Care_Management_System.ViewModels;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Final_Project_4600___Medical_Care_Management_System.Views
 {
